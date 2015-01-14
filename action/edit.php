@@ -480,6 +480,7 @@ $ckeditor_replace =<<<CKEDITOR_REPLACE
                   toolbar: '$toolbar' ,    
                   filebrowserImageBrowseUrl :  '$doku_url/lib/plugins/ckgedit/fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&Connector=$doku_url/lib/plugins/ckgedit/fckeditor/editor/filemanager/connectors/php/connector.php?' ,
                   filebrowserBrowseUrl: '$doku_url/lib/plugins/ckgedit/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&Connector=$doku_url/lib/plugins/ckgedit/fckeditor/editor/filemanager/connectors/php/connector.php?',                                
+                  readOnly: (typeof(jQuery('#wiki__text').attr('readonly')) !== 'undefined' ? true : false),
                }
 		   );
            FCKeditor_OnComplete(ckgeditCKInstance);
