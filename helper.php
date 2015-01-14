@@ -452,7 +452,7 @@ function FCKeditor_OnComplete( editorInstance )
   oDokuWiki_FCKEditorInstance.fckgUserMail="$user_email"; 
  
   var index = navigator.userAgent.indexOf('Safari'); 
-  if(index == -1  || (navigator.userAgent.indexOf('Chrome'))) {
+  if(index == -1  || (navigator.userAgent.indexOf('Chrome')) !== -1) {
     oldBeforeunload = window.onbeforeunload;
     window.onbeforeunload = ckgeditEditorTextChanged;
   }
